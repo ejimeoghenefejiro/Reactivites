@@ -1,4 +1,3 @@
-using System;
 using Domain;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,6 +9,7 @@ namespace Persistence
         {
         }
         public DbSet<value> Values { get; set; }
+        public DbSet<Activity> Activities { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
